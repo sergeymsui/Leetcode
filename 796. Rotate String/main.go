@@ -1,3 +1,7 @@
+package main
+
+import "fmt"
+
 // rotate reverses the input string s and returns the result
 func rotate(s string) string {
 	t := "" // Initialize an empty string to store the reversed version of s
@@ -37,4 +41,13 @@ func rotateString(s string, goal string) bool {
 
 	// If no rotation of s matches goal, return false
 	return false
+}
+
+func main() {
+
+	s := "abcde"
+	goal := "cdeab"
+
+	fmt.Println(rotateString(s, goal))
+
 }
