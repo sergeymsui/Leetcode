@@ -38,3 +38,4 @@ func main() {
 
 	fmt.Println(construct2DArray(original, m, n))
 }
+
